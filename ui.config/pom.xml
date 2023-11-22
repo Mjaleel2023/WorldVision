@@ -73,6 +73,11 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-         
+         <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.29</version>
+    <scope>provided</scope>
+</dependency>
     </dependencies>
 </project>

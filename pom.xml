@@ -1150,7 +1150,12 @@ Bundle-DocURL:
         <scope>test</scope>
                     
       </dependency>
-
+     <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.29</version>
+    <scope>provided</scope>
+</dependency>
               
     </dependencies>
         

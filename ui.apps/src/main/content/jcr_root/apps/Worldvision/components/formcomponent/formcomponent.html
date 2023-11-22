@@ -1,0 +1,40 @@
+
+<sly data-sly-use.model="com.Worldvision.core.models.FormComponentModel"></sly>
+
+
+<form id="userDataForm">
+    <label>${properties.eid}:</label>
+    <input type="text" id="employee_id" name="employee_id" required><br><br>
+
+    <label>${model.first_name}:</label>&emsp;
+    <input type="text" id="first_name" name="first_name" required><br><br>
+
+    <label>${model.last_name}:</label>&emsp;
+    <input type="text" id="last_name" name="last_name" required><br><br>
+
+    <label>${model.address}:</label>&emsp;&emsp;
+    <input type="text" id="address" name="address" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<!-- JavaScript for form submission and response display -->
+<script>
+document.getElementById("userDataForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    var formData = new FormData(event.target);
+
+    fetch("/services/insert-data", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("responseMessage").innerHTML = data;
+    })
+    .catch(error => console.error("Error:", error));
+});
+</script>
+
+<div id="responseMessage"></div>
