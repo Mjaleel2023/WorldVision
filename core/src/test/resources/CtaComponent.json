@@ -1,0 +1,16 @@
+{
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "buttonlabel": "button",
+    "jcr:lastModifiedBy": "admin",
+    "optionsType": "_blank",
+    "jcr:created": "Mon Oct 16 2023 17:59:17 GMT+0530",
+    "link": "https://www.worldvision.org.uk",
+    "jcr:lastModified": "Mon Oct 16 2023 18:00:05 GMT+0530",
+    "sling:resourceType": "Worldvision/components/worldvisionbutton",
+    "cq:styleIds": [
+    "1697453084508",
+    "1697446799610",
+    "1697453161131"
+    ]
+    }

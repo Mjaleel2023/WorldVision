@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/Worldvision" mode="merge"/>
+    <filter root="/content/Worldvision" mode="merge"/>
+    <filter root="/content/dam/Worldvision" mode="merge">
+        <exclude pattern="/content/dam/Worldvision(/.*)?"/>
+        <include pattern="/content/dam/Worldvision/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/Worldvision/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/Worldvision" mode="merge"/>
+</workspaceFilter>

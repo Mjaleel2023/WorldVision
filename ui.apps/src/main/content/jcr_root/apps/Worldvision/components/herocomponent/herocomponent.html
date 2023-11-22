@@ -1,0 +1,14 @@
+
+<sly data-sly-use.model="com.Worldvision.core.models.HeroBannerComponentModel" />
+
+${model.title}
+${'dd-MM-yyyy' @ format=model.enddate}
+${'dd-MM-yyyy' @ format=model.startdate}
+
+ <sly data-sly-resource="${'btn' @resourceType='Worldvision/components/worldvisionbutton'}"/>
+
+<img src="${model.fileReference}" width="500px",height="500px"/>
+
+
+ 
+

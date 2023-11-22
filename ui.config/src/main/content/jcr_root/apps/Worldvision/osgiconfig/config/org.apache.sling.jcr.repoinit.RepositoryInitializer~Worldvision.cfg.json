@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/Worldvision",
+        "create path (nt:unstructured) /content/dam/Worldvision/jcr:content",
+        "set properties on /content/dam/Worldvision/jcr:content\n  set cq:conf{String} to /conf/Worldvision\n  set jcr:title{String} to \"Worldvision\"\nend"
+    ]
+}
